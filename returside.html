@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style/style.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Returside</title>
 </head>
 <body>
+    <header>
+           
+        <nav> 
+            <a href="index.html" id="logo">logo</a>
+            <div>
+                <i id="ham" class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Hjemside</a></li>
+                <li><a href="produkt.html">Produktside</a></li>
+                <li><a href="returside.html">Returside</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="search....." id="søkefelt">
+        
+    </header>
+    <main>
+        <section>
+            <h1>Returside</h1>
+                <p>Trinn 1: Velg varen(e) du ønsker å returnere.</p>
+                <p>Trinn 2: Fyll ut returskjemaet.</p> 
+                <p>Trinn 3: Velg refusjonsmetode.</p> 
+                <p>Trinn 4: Bekreft returen.</p>
+                <p>- Navn: Fullt navn.</p>
+                <p>-Adresse: Leveringsadresse for returen.</p>
+                <p>-E-post: Din e-postadresse.</p>
+                <p>-Telefonnummer: Ditt telefonnummer.</p>
+                <P>-Ordrenummer: Ordrenummeret knyttet til den returnerte varen.</P>
+                <p>-Årsak til retur: En kort beskrivelse av hvorfor du returnerer varen.</p>
+                <p>-Refusjonsmetode: Velg hvordan du vil motta refusjonen (refusjon, bytte, kreditt osv.).</p>
+                <p>-Returbetingelser: En lenke til nettbutikkens returbetingelser for mer informasjon.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Kontakt oss: Verdensbeste</p>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+    </footer>
+
     
+    <script>
+        let ham = document.getElementById("ham")
+            let x = document.querySelector(".navar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+    </script>
 </body>
 </html>
