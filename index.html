@@ -1,20 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style/style.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Hjemside</title> 
 </head>
 <body>
     <header>
-        <span>
-        
-        </span>
-        <nav>
-            
+           
+        <nav> 
+            <a href="index.html" id="logo">logo</a>
+            <div>
+                <i id="ham" class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Hjemside</a></li>
+                <li><a href="produkt.html">Produktside</a></li>
+                <li><a href="returside.html">Returside</a></li>
+            </ul>
         </nav>
+        <input type="text" placeholder="search....." id="søkefelt">
+        
     </header>
+    <main>
+        <section class="default-flex">
+            <h2>Verdens beste nettbutikk</h2>
+
+            <article id="main-article">
+                <img id="hbilde" src="img/treningsko.png" alt="Treningsko">
+                <h3>Trenings sko</h3>
+            </article>
+
+            <div class="sub-articles">
+                <article>
+                    <h3>Inne sko</h3>
+                    <img src="img/innesko.webp" alt="Inne sko">
+                </article>
+                <article>
+                    <h3>Football sko</h3>
+                    <img src="img/footballsko.png" alt="Football sko">
+                </article>
+                <article>
+                    <h3>Jogge sko</h3>
+                    <img src="img/joggesko.webp" alt="Jogge sko">
+                </article>
+        </div>
+
+        <a href="produkt.html" class="">Kjøp nå</a>
+    </section>
+    </main>
+    <footer>
+        <p>Kontakt oss: Verdensbeste</p>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+    </footer>
+
+    <script>
+        let ham = document.getElementById("ham")
+            let x = document.querySelector(".navar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+    </script>
 </body>
 </html>
