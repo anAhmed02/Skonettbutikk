@@ -8,6 +8,17 @@
     <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>produktside</title>
+    <meta property="og:title" content="Verdens beste nettbutikk - Produktside">
+    <meta name="discription" content="Sjekk ut vårt utvalg av treningssko, innesko, fotballsko og joggesko. Handla nå for den beste treningsopplevelsen">
+    <meta property="og:title" content="Verdens beste nettbutikk">
+    <meta property="og:image" content="https://in.pinterest.com/pin/football-boots-png-nike-football-shoes-png-image-with-transparent-background-png-free-png-images--591378994837575898/">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Få det beste av trenings utstyr hos Verdens beste nettbutikk">
+    <meta name="twitter:image" content="https://in.pinterest.com/pin/football-boots-png-nike-football-shoes-png-image-with-transparent-background-png-free-png-images--591378994837575898/">
+    <meta name="twitter:discription" content="Finn de perfekte skoene for deg kunn på Verdens beste nettbutikk">
+    
+    <!--huske å legge til nettside url-->
 </head>
 <body>
     <header>
@@ -21,6 +32,7 @@
                 <li><a href="index.html">Hjemside</a></li>
                 <li><a href="produkt.html">Produktside</a></li>
                 <li><a href="returside.html">Returside</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
             </ul>
         </nav>
         <input type="text" placeholder="search....." id="søkefelt">
@@ -28,7 +40,7 @@
     </header>
     
     <main class="default-flex">
-        <section class="default-flex">
+        <section class="default-flex" itemscope itemtype="http://schema.org/Product">
             <ul class="produktliste">
                 <li>Filter</li>
                 <li>Football</li>
@@ -41,7 +53,17 @@
                 <li>Innesko</li>
             </ul>
             <article>
-                <img class="produktbilde" src="img/produktside.png" alt="produktside">
+                <img class="produktbilde" src="img/produkt sko.png" alt="produktside" itemprop="image">
+                
+                <h2 itemprop="name">Footballsko XYZ</h2>
+                <p itemprop="discription">Premium footballsko</p>
+                <span itemprop="brand">Nike</span>
+                <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <span itemprop="priceCurrency" content="NOK">NOK</span>
+                    <span itemprop="price" content="1299">1299</span>
+
+                </span>
+
             </article>
         </section>
     </main>
@@ -65,5 +87,6 @@
                 }
             })
     </script>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
 </body>
 </html>
