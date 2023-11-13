@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+    <link href="css/font/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>analyse</title>
+    <meta property="og:title" content="Verdens beste nettbutikk - Analyse">
+    <!--huske å legge til nettside url -->
+</head>
+<body>
+    <header>
+           
+        <nav> 
+            <a href="index.html" id="logo">logo</a>
+            <div>
+                <i id="ham" class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Hjemside</a></li>
+                <li><a href="produkt.html">Produktside</a></li>
+                <li><a href="returside.html">Returside</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="search....." id="søkefelt">
+    </header>
+    <main>
+        <section>
+            <h1>Nøkkelord</h1>
+            <h3>Footballsko</h3>
+            <p>Mitt første nøkkelordet for å rette meg en målgruppe som er spesielt intresert i football sko. Det er også et veldig vanlig søkeutrykk som kan fange oppmersomheten til en stor målgruppe.</p>
+            <h3>Treningsko</h3>
+            <p>Mitt andre nøkkelord er treningsko det valgte eg for å bringe oppmerksomhet til den bredere treningssektoren. Treningsko kan treffe en ennå større målgruppe en football sko igjen. </p>
+            <h3>Endringer</h3>
+            <p>endret fargene til litt roligere farger for å gjør det enklere</p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Kontakt oss: Verdensbeste</p>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+    </footer>
+
+    
+    <script>
+        let ham = document.getElementById("ham")
+            let x = document.querySelector(".navar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+    </script>
+</body>
+</html>
